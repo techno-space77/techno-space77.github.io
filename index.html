@@ -12,6 +12,12 @@ height: 36px;
 border-radius: 50%;
 border-left-color: #09f;
 animation: spin 1s ease infinite;
+  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
 }
 
 @keyframes spin {
@@ -22,19 +28,7 @@ transform: rotate(Odeg);
 transform: rotate(360deg);
 }
 }
-.spinner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
-  height: 100px;
-  width: 200px;
-
-  background: #ffff99;
-  color: #333;
-}
-.spinner__content {
-}
 </style>
 </head>
 
