@@ -5,11 +5,25 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>Ejemplo de estilos CSS en el propio documento</title>
 <style type="text/css">
-  p { color: black; font-family: Verdana; }
+  .spinner {
+border: 4px solid rgba(0, 0, 0, .1);
+width: 36px;
+height: 36px;
+border-radius: 50%;
+border-left-color: #09f;
+animation: spin 1s easd infinite;
+
+@keyframes spin {
+0% {
+transform: rotate(Odeg);
+}
+100% {
+transform: rotate(360deg);}
+}
 </style>
 </head>
 
 <body>
-<p>Un párrafo de texto.</p>
+<div class="spinner"></div>
 </body>
 </html>
